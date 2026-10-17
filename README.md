@@ -1,99 +1,79 @@
-# Plataforma de Servicios Domésticos y Cuidado de Niños
+<div align="center">
 
-# Descripción del Proyecto
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png" alt="Logo de PleasedHome" width="120" />
 
-Este proyecto consiste en el desarrollo de una plataforma digital innovadora diseñada para facilitar la contratación de servicios domésticos y cuidado de niños. Nuestra plataforma conecta a clientes que buscan asistencia en tareas del hogar o cuidado infantil con proveedores de servicios calificados y confiables.
+# 🏠 PleasedHome
 
-# Características Principales
+**Plataforma web para contratar servicios domésticos y de cuidado de niños, que conecta a familias con proveedores calificados y confiables.**
 
-- Búsqueda Avanzada: Los usuarios pueden buscar proveedores de servicios basándose en diversos criterios como tipo de servicio, ubicación, tarifas y calificaciones.
+![Next.js](https://img.shields.io/badge/Next.js-14-0B1220?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-18-3776AB?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-0B1220?style=flat-square&logo=typescript&logoColor=FFD43B)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3776AB?style=flat-square&logo=tailwindcss&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-0B1220?style=flat-square&logo=postgresql&logoColor=FFD43B)
 
-- Perfiles Detallados: Los proveedores de servicios pueden crear perfiles completos, incluyendo sus habilidades, experiencia y disponibilidad.
+</div>
 
-- Sistema de Reseñas y Calificaciones: Implementamos un robusto sistema de reseñas y calificaciones (escala de 1 a 10) para ayudar a los clientes a tomar decisiones informadas.
+---
 
-- Gestión de Hojas de Vida: Los proveedores pueden adjuntar y actualizar sus hojas de vida, proporcionando una visión más completa de sus calificaciones y experiencia laboral.
+## 📌 Descripción
 
-- Programación de Servicios: La plataforma permite a los clientes programar entrevistas o servicios directamente con los proveedores.
+Encontrar a alguien de confianza para el hogar o para cuidar a los niños suele depender del voz a voz. **PleasedHome** centraliza ese proceso: los proveedores publican sus servicios y su experiencia, y los clientes buscan, comparan por calificaciones y contratan.
 
-- Panel de Administración: Incluye herramientas para que los administradores moderen el contenido, gestionen usuarios y analicen el rendimiento de la plataforma.
+## ✨ Funcionalidades
 
-Este proyecto tiene como objetivo simplificar el proceso de contratación de servicios domésticos y cuidado infantil, proporcionando una plataforma segura, eficiente y fácil de usar tanto para clientes como para proveedores de servicios.
+- 🔎 **Búsqueda avanzada** por tipo de servicio, ubicación, tarifa y calificación.
+- 👤 **Perfiles detallados** de proveedores: habilidades, experiencia y disponibilidad.
+- ⭐ **Reseñas y calificaciones** (escala de 1 a 10) para decidir con información.
+- 📄 **Hojas de vida** adjuntas y actualizables.
+- 📅 **Agenda** de entrevistas y servicios directamente con el proveedor.
+- 🛠️ **Panel de administración** para moderar contenido y gestionar usuarios.
 
-## Color Reference
+## 🗂️ Estructura
 
-| Color                                                                                                    | Hex                                                              |
-| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Como color principal para la barra de navegación, encabezados y elementos de marca.                      | ![#00796B](https://via.placeholder.com/10/00796B?text=+) #00796B |
-| Para elementos interactivos secundarios, iconos y detalles de la interfaz.                               | ![#4DB6AC](https://via.placeholder.com/10/4DB6AC?text=+) #4DB6AC |
-| Para un aspecto limpio y fresco.                                                                         | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
-| Para separar secciones o como fondo alternativo para tarjetas y paneles.                                 | ![#F5F5F5](https://via.placeholder.com/10/F5F5F5?text=+) #F5F5F5 |
-| Para botones de llamada a la acción, alertas importantes o elementos que necesiten destacar visualmente. | ![#FFA000](https://via.placeholder.com/10/FFA000?text=+) #FFA000 |
-
-## Documentation
-
-[Documentacion del proyecto](https://linktodocumentation)
-
-[Mockup del proyecto](https://www.figma.com/design/YXvZzmoRoUVdnWMIf3VBS4/pleasedHome?node-id=0-1&t=7vqjbB9ZM91UT75x-1)
-
-[Users Stories](https://linktodocumentation)
-
-[Diagramas del proyecto](https://linktodocumentation)
-
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
+```
+├── app/
+│   ├── (root)/               # Página de inicio
+│   ├── (login)/  (sign-up)/  # Autenticación
+│   └── (dashboard)/          # Panel: publicaciones y perfil
+├── components/               # Componentes de UI (Navbar, PublishCard, StarRating…)
+├── actions.ts                # Server Actions
+└── bd/services.sql           # Esquema de la base de datos
 ```
 
-# Logo
+## 🎨 Paleta de colores
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+| Uso | Color |
+|---|---|
+| Principal: navegación, encabezados y marca | `#00796B` |
+| Secundario: elementos interactivos e íconos | `#4DB6AC` |
+| Fondo limpio | `#FFFFFF` |
+| Fondo alterno: tarjetas y paneles | `#F5F5F5` |
+| Llamados a la acción y alertas | `#FFA000` |
 
-## Authors
-
-- [@Angie Moya](https://www.github.com/AngieMoya)
-- [@Jeider Foronda](https://www.github.com/Jeider-fp)
-- [@Juan Barrios](https://www.github.com/JuanB12)
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+## 🚀 Cómo ejecutarlo
 
 ```bash
+# 1. Clonar e instalar
+git clone https://github.com/JuanB12/PleasedHome.git
+cd PleasedHome
+npm install
+
+# 2. Variables de entorno: copiar el ejemplo y poner tu conexión a PostgreSQL
+cp .env.example .env
+
+# 3. Servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Recursos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Mockup en Figma](https://www.figma.com/design/YXvZzmoRoUVdnWMIf3VBS4/pleasedHome?node-id=0-1&t=7vqjbB9ZM91UT75x-1)
 
-## Learn More
+## 👥 Equipo
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-> > > > > > > 8ab7bb8 (Initial commit from Create Next App)
+- [Angie Moya](https://github.com/AngieMoya)
+- [Jeider Foronda](https://github.com/Jeider-fp)
+- [Juan Barrios](https://github.com/JuanB12)
