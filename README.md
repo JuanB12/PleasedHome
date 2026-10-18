@@ -14,6 +14,8 @@
 
 </div>
 
+> 🎓 **Proyecto universitario** desarrollado en equipo.
+
 ---
 
 ## 📌 Descripción
